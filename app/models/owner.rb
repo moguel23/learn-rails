@@ -3,13 +3,13 @@ class Owner
 		name = 'Nombre Nommm'
 	end
 
-	def birthdate
-		birthdate = Date.new(1982,11,12)
+	def bday
+		bday = Date.new(1982,11,12)
 	end
 
 	def countdown
 		today = Date.today
-		birthday= Date.new(today.year, birthdate.month, birthdate.day)
+		birthday= Date.new(today.year, bday.month, bday.day)
 		if birthday > today
 			countdown = (birthday - today).to_i
 		else
